@@ -1,0 +1,74 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Abracadaniel",
+            "first_name": "Dan",
+            "last_name": "Dan",
+            "email": "me@me.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-08-28T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "User2",
+            "first_name": "User2",
+            "last_name": "User2",
+            "email": "user2@usersrus.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-08-28T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "User3",
+            "first_name": "User3",
+            "last_name": "User3",
+            "email": "user3@usersrus.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-08-28T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$818P7hxzrjjbRZi5tf8Lhv$HdzWaXY8ZqUGDDF5nICjeG2Ap+9piLmnpU4tCnEhAPg=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "User4",
+            "first_name": "User4    ",
+            "last_name": "User4",
+            "email": "user4@usersrus.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-09-12 15:10:16.619962",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]
