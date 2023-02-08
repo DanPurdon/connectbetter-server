@@ -1,0 +1,66 @@
+[
+    {
+        "model": "connectbetterapi.usercustomfield",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "name": "Favorite Drink",
+            "type": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.usercustomfield",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "name": "Restaurant Recco's",
+            "type": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.usercustomfield",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "name": "Relationship Status",
+            "type": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.usercustomfield",
+        "pk": 4,
+        "fields": {
+            "user": 2,
+            "name": "MO",
+            "type": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.usercustomfield",
+        "pk": 5,
+        "fields": {
+            "user": 2,
+            "name": "Weakness",
+            "type": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.usercustomfield",
+        "pk": 6,
+        "fields": {
+            "user": 2,
+            "name": "Last incarcerated",
+            "type": 2
+        }
+    },
+    {
+        "model": "connectbetterapi.usercustomfield",
+        "pk": 7,
+        "fields": {
+            "user": 1,
+            "name": "Restaurant Group",
+            "type": 1
+        }
+    }
+]
+

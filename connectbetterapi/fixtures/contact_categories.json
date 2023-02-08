@@ -1,0 +1,42 @@
+[
+    {
+        "model": "connectbetterapi.contactcategory",
+        "pk": 1,
+        "fields": {
+            "contact": 1,
+            "user_category": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.contactcategory",
+        "pk": 2,
+        "fields": {
+            "contact": 1,
+            "user_category": 5
+        }
+    },
+    {
+        "model": "connectbetterapi.contactcategory",
+        "pk": 3,
+        "fields": {
+            "contact": 4,
+            "user_category": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.contactcategory",
+        "pk": 4,
+        "fields": {
+            "contact": 4,
+            "user_category": 5
+        }
+    },
+    {
+        "model": "connectbetterapi.contactcategory",
+        "pk": 5,
+        "fields": {
+            "contact": 5,
+            "user_category": 1
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "model": "connectbetterapi.fieldtype",
+        "pk": 1,
+        "fields": {
+            "type": "Text"
+        }
+    },
+    {
+        "model": "connectbetterapi.fieldtype",
+        "pk": 2,
+        "fields": {
+            "type": "Date"
+        }
+    }
+]

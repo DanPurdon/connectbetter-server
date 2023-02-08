@@ -1,0 +1,376 @@
+[
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "first_name": "Meaghan",
+            "last_name": "",
+            "metAt": "RBQ",
+            "city": "Nashville",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "In charge of RBQ hiring",
+            "date_created": "2022-06-10"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "first_name": "Isaac",
+            "last_name": "Asimov",
+            "metAt": "SciFiCon",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": "1965-06-20",
+            "notes": "Said to submit manuscript to jen@asimov.com",
+            "date_created": "2022-06-12"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "first_name": "Bill",
+            "last_name": "Hader",
+            "metAt": "Deli",
+            "city": "LA",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "I told him I started a religion in his name and he got uncomfortable and left",
+            "date_created": "2022-06-13"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 4,
+        "fields": {
+            "user": 1,
+            "first_name": "Jeremy",
+            "last_name": "",
+            "metAt": "Tempered Fine Chocolates",
+            "city": "Nashville",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Bartender",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 5,
+        "fields": {
+            "user": 1,
+            "first_name": "Crystal",
+            "last_name": "",
+            "metAt": "Tempered Fine Chocolates",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Senior bartender",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 6,
+        "fields": {
+            "user": 1,
+            "first_name": "Dan",
+            "last_name": "",
+            "metAt": "Tempered Fine Chocolates",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Chef, Mother's Ruin",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 7,
+        "fields": {
+            "user": 1,
+            "first_name": "Rick",
+            "last_name": "",
+            "metAt": "Cast Iron",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Manager of Catering",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 8,
+        "fields": {
+            "user": 1,
+            "first_name": "Salvatore",
+            "last_name": "",
+            "metAt": "Cast Iron",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Sommelier, prepped us custom wine flights",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 9,
+        "fields": {
+            "user": 1,
+            "first_name": "Shawn",
+            "last_name": "",
+            "metAt": "Resonance @ SOMA",
+            "city": "",
+            "email": "",
+            "phone": "4254538886",
+            "socials": "",
+            "birthday": null,
+            "notes": "Events/booking manager",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 10,
+        "fields": {
+            "user": 1,
+            "first_name": "Nick",
+            "last_name": "",
+            "metAt": "Damn the Weather",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Seattle speakeasy bartender, gave tons of area recco's",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 11,
+        "fields": {
+            "user": 1,
+            "first_name": "Kai",
+            "last_name": "Ren",
+            "metAt": "Dallas Chinatown",
+            "city": "",
+            "email": "skyrenkai@gmail.com",
+            "phone": "4693603086",
+            "socials": "",
+            "birthday": null,
+            "notes": "Potential venue space",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 12,
+        "fields": {
+            "user": 1,
+            "first_name": "Chris",
+            "last_name": "",
+            "metAt": "SF Food Hall owner/developer",
+            "city": "",
+            "email": "cfoley@groundmatrix.com",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Walked through potential event spaces ",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 13,
+        "fields": {
+            "user": 3,
+            "first_name": "Ryan",
+            "last_name": "Reynolds",
+            "metAt": "Hollywoo",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "IG: vancityreynolds",
+            "birthday": null,
+            "notes": "Still owes me $5",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 14,
+        "fields": {
+            "user": 3,
+            "first_name": "Tom",
+            "last_name": "Holland",
+            "metAt": "Inside the Multiverse",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": "1996-06-01",
+            "notes": "REALLY hates cilantro",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 15,
+        "fields": {
+            "user": 3,
+            "first_name": "Zendaya",
+            "last_name": "",
+            "metAt": "Spidey-set",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": "1996-09-01",
+            "notes": "Really changed after that whole Euphoria business",
+            "date_created": "2022-06-15"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 16,
+        "fields": {
+            "user": 3,
+            "first_name": "Bill",
+            "last_name": "Clinton",
+            "metAt": "DC",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "Plays a meannnnn sax",
+            "date_created": "2022-06-16"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 17,
+        "fields": {
+            "user": 1,
+            "first_name": "Clara",
+            "last_name": "",
+            "metAt": "UES",
+            "city": "NYC",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "",
+            "date_created": "2022-06-21"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 18,
+        "fields": {
+            "user": 1,
+            "first_name": "Hank",
+            "last_name": "",
+            "metAt": "Mineral Expo",
+            "city": "Albequerque",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "",
+            "date_created": "2022-06-21"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 19,
+        "fields": {
+            "user": 1,
+            "first_name": "Testy",
+            "last_name": "Tester",
+            "metAt": "Valhalla",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "",
+            "date_created": "2022-06-21"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 20,
+        "fields": {
+            "user": 2,
+            "first_name": "The",
+            "last_name": "Penguin",
+            "metAt": "",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "",
+            "date_created": "2022-07-06"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 21,
+        "fields": {
+            "user": 2,
+            "first_name": "The ",
+            "last_name": "Joker",
+            "metAt": "",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "",
+            "date_created": "2022-11-08"
+        }
+    },
+    {
+        "model": "connectbetterapi.contact",
+        "pk": 22,
+        "fields": {
+            "user": 2,
+            "first_name": "Catwoman",
+            "last_name": "",
+            "metAt": "",
+            "city": "",
+            "email": "",
+            "phone": "",
+            "socials": "",
+            "birthday": null,
+            "notes": "",
+            "date_created": "2022-11-08"
+        }
+    }
+]

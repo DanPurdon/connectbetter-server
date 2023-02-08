@@ -1,0 +1,120 @@
+[
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 1,
+        "fields": {
+            "user_custom_field": 1,
+            "content": "Negroni",
+            "contact": 1
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 2,
+        "fields": {
+            "user_custom_field": 1,
+            "content": "Sidecar",
+            "contact": 3
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 3,
+        "fields": {
+            "user_custom_field": 1,
+            "content": "Whiskey Sour",
+            "contact": 17
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 4,
+        "fields": {
+            "user_custom_field": 1,
+            "content": "Mead",
+            "contact": 19
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 5,
+        "fields": {
+            "user_custom_field": 1,
+            "content": "Manhattan",
+            "contact": 12
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 6,
+        "fields": {
+            "user_custom_field": 6,
+            "content": "2022-07-04",
+            "contact": 20
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 7,
+        "fields": {
+            "user_custom_field": 4,
+            "content": "$$ and hedonism",
+            "contact": 20
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 8,
+        "fields": {
+            "user_custom_field": 5,
+            "content": "Also hedonism",
+            "contact": 20
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 9,
+        "fields": {
+            "user_custom_field": 6,
+            "content": "2022-07-04",
+            "contact": 21
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 10,
+        "fields": {
+            "user_custom_field": 4,
+            "content": "General chaos",
+            "contact": 21
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 11,
+        "fields": {
+            "user_custom_field": 5,
+            "content": "Boredom? Also acid",
+            "contact": 21
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 12,
+        "fields": {
+            "user_custom_field": 4,
+            "content": "Jewels, $$",
+            "contact": 22
+        }
+    },
+    {
+        "model": "connectbetterapi.customfieldcontent",
+        "pk": 13,
+        "fields": {
+            "user_custom_field": 5,
+            "content": "Laser pointer",
+            "contact": 22
+        }
+    }
+]
+

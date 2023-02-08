@@ -1,0 +1,91 @@
+[
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "name": "Networking"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "name": "Friends"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "name": "Dating"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 4,
+        "fields": {
+            "user": 1,
+            "name": "Work"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 5,
+        "fields": {
+            "user": 1,
+            "name": "Barhopping"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 6,
+        "fields": {
+            "user": 1,
+            "name": "Mischief"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 7,
+        "fields": {
+            "user": 2,
+            "name": "Police"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 8,
+        "fields": {
+            "user": 2,
+            "name": "Civilian"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 9,
+        "fields": {
+            "user": 2,
+            "name": "Politician"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 10,
+        "fields": {
+            "user": 2,
+            "name": "Hero"
+        }
+    },
+    {
+        "model": "connectbetterapi.usercategory",
+        "pk": 11,
+        "fields": {
+            "user": 2,
+            "name": "Villain"
+        }
+    }
+]
+
