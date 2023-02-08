@@ -43,11 +43,19 @@ class ContactView(ViewSet):
             Response -- JSON serialized contact instance
         """
         user = request.user
+        # userFieldContents will be an array of objects with "content" and "userCustomFieldId" keys
+        custom_fields = request.data["userFieldContents"]
+        # chosenCategories- adjust this to be a SET of category ID's incoming
+        chosen_categories = request.data["chosenCategories"]
+
+        # TODO Convert all incoming blank fields to null? At least birthday must be null
+        # TODO Remove user id field and date from incoming object, will handle in back end
+        # TODO Add userFieldContents and chosenCatagories to incoming object instead of separate arguments
 
         contact = Contact.objects.create(
             user = user,
-            first_name = request.data["first_name"],
-            last_name = request.data["last_name"],
+            first_name = request.data["firstName"],
+            last_name = request.data["lastName"],
             metAt = request.data["metAt"],
             city = request.data["city"],
             birthday = request.data["birthday"],
@@ -57,6 +65,22 @@ class ContactView(ViewSet):
             notes = request.data["notes"],
             date_created = date.today()
         )
+
+        for categoryId in chosen_categories:
+            user_category = UserCategory.objects.get(pk=categoryId)
+            ContactCategory.objects.create(
+                contact = contact,
+                user_category = user_category
+            )
+
+        for field in custom_fields:
+            user_custom_field = UserCustomField.objects.get(pk=field["userCustomFieldId"])
+            CustomFieldContent.objects.create(
+                contact = contact,
+                user_custom_field = user_custom_field,
+                content = field["content"]
+            )
+        
         serializer = ContactsSerializer(contact)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
@@ -68,9 +92,15 @@ class ContactView(ViewSet):
         """
 
         contact = Contact.objects.get(pk=pk)
-        contact.name = request.data["name"]
-        fieldType = FieldType.objects.get(pk=request.data["type"])
-        contact.type = fieldType
+        contact.first_name = request.data["firstName"],
+        contact.last_name = request.data["lastName"],
+        contact.metAt = request.data["metAt"],
+        contact.city = request.data["city"],
+        contact.birthday = request.data["birthday"],
+        contact.email = request.data["email"],
+        contact.phone = request.data["phone"],
+        contact.socials = request.data["socials"],
+        contact.notes = request.data["notes"],
 
         contact.save()
 
