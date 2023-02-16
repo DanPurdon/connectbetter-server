@@ -4,7 +4,7 @@ from datetime import date, datetime
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from connectbetterapi.models import UserCustomField, FieldType, CustomFieldContent, UserCategory, Contact, ContactCategory
+from connectbetterapi.models import UserCustomField, CustomFieldContent, UserCategory, Contact, ContactCategory
 from django.db.models import Q
 
 class ContactView(ViewSet):
@@ -92,17 +92,54 @@ class ContactView(ViewSet):
         """
 
         contact = Contact.objects.get(pk=pk)
-        contact.first_name = request.data["firstName"],
-        contact.last_name = request.data["lastName"],
-        contact.metAt = request.data["metAt"],
-        contact.city = request.data["city"],
-        contact.birthday = request.data["birthday"],
-        contact.email = request.data["email"],
-        contact.phone = request.data["phone"],
-        contact.socials = request.data["socials"],
-        contact.notes = request.data["notes"],
+        contact.first_name = request.data["firstName"]
+        contact.last_name = request.data["lastName"]
+        contact.metAt = request.data["metAt"]
+        contact.city = request.data["city"]
+        contact.birthday = request.data["birthday"]
+        contact.email = request.data["email"]
+        contact.phone = request.data["phone"]
+        contact.socials = request.data["socials"]
+        contact.notes = request.data["notes"]
 
         contact.save()
+
+        previous_categories = ContactCategory.objects.filter(contact_id=contact.id)
+        previous_contents = CustomFieldContent.objects.filter(contact_id=contact.id)
+
+        chosen_categories = request.data["chosenCategories"]
+        custom_fields = request.data["userFieldContents"]
+
+        # Makes a set of previous user_category_id's for this contact, AND deletes if this category has been unchecked
+        previous_category_set = set()
+        for category in previous_categories:
+            previous_category_set.add(category.user_category)
+            if category.user_category not in chosen_categories:
+                category.delete()
+
+        # Checks if each category already was checked. If not, creates a new ContactCategory
+        for categoryId in chosen_categories:
+            if categoryId not in previous_category_set:
+                user_category = UserCategory.objects.get(pk=categoryId)
+                ContactCategory.objects.create(
+                    contact = contact,
+                    user_category = user_category
+                )
+
+        # Check each field for preexisting data, and update if different. If no preexisting, create new entry. 
+        for field in custom_fields:
+            contents = previous_contents.filter(Q(user_custom_field_id=field["userCustomFieldId"]) & Q(contact_id=contact.id))
+            if len(contents) > 0:
+                content = contents[0]
+                content.content = field["content"]
+                content.save()
+            else:
+                user_custom_field = UserCustomField.objects.get(pk=field["userCustomFieldId"])
+                CustomFieldContent.objects.create(
+                    contact = contact,
+                    user_custom_field = user_custom_field,
+                    content = field["content"]
+                )
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
