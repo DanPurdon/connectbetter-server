@@ -48,6 +48,8 @@ class ContactView(ViewSet):
         # chosenCategories- adjust this to be a SET of category ID's incoming
         chosen_categories = request.data["chosenCategories"]
 
+
+        
         # TODO Convert all incoming blank fields to null? At least birthday must be null
         # TODO Remove user id field and date from incoming object, will handle in back end
         # TODO Add userFieldContents and chosenCatagories to incoming object instead of separate arguments
@@ -164,5 +166,5 @@ class LeanContactsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
         fields = ('id', 'user', 'first_name', 'last_name', 'metAt', 'city', 'birthday',
-        'email', 'phone', 'socials', 'notes', 'date_created')
+        'email', 'phone', 'socials', 'notes', 'date_created', 'categories', 'field_content')
         depth = 1  
